@@ -34,8 +34,8 @@ const LandingPage = () => {
     >
       <motion.div
         initial={{
-          paddingTop: "100px",
-          paddingBottom: "100px",
+          paddingTop: "60px",
+          paddingBottom: "60px",
           paddingLeft: "200px",
           paddingRight: "200px",
         }}
@@ -138,7 +138,7 @@ const LandingPage = () => {
                 transition={{ duration: 0.5 }}
                 className="flex m-auto justify-end w-full pr-16 "
               >
-                <span className="text-black text-8xl font-bold  font-['Founders Grotesk X Condensed']">
+                <span className="text-black text-7xl font-bold  font-['Founders Grotesk X Condensed']">
                   {count}%
                 </span>
               </motion.div>
@@ -148,8 +148,8 @@ const LandingPage = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeIn" }}
-            className="border-t-[1px] border-zinc-800 mt-20 flex items-center justify-between py-5 px-20"
+            transition={{ duration: 1, ease: "easeIn", delay: 3 }}
+            className="border-t-[1px] border-gray-400 flex items-center justify-between py-3 px-20"
           >
             {[
               "For public and private companies",
@@ -157,16 +157,16 @@ const LandingPage = () => {
             ].map((item, i) => (
               <p
                 key={i}
-                className="text-xl text-gray-500 font-[500] font-['Founders Grotesk X Condensed'] leading-none"
+                className="text-base text-gray-500 font-[500px] font-['Founders Grotesk X Condensed'] leading-none"
               >
                 {item}
               </p>
             ))}
-            <div className="start flex items-center gap-5">
-              <div className="px-5 py-2 border-[1px] border-zinc-900 text-xl text-gray-500 font-[500] font-['Founders Grotesk X Condensed']  capitalize rounded-full ">
+            <div className="start flex items-center gap-2">
+              <div className="px-5 py- border-[1px] border-zinc-500 text-base text-gray-500 font-[500px] font-['Founders Grotesk X Condensed']  capitalize rounded-full ">
                 START THE PROJECT{" "}
               </div>
-              <div className="w-10 h-10 border-[1px] flex items-center justify-center border-zinc-500 text-gray-500 rounded-full">
+              <div className="w-7 h-7 border-[1px] flex items-center justify-center border-zinc-500 text-gray-500 rounded-full">
                 <span className="rotate-[45deg]">
                   <FaArrowUpLong />
                 </span>

@@ -71,7 +71,7 @@ const Navbar = () => {
               <a
                 href="#"
                 key={i}
-                className={` text-zinc-600 cursor-pointer  font-[500] text-xl ${
+                className={`text-base text-gray-700 font-[500px] cursor-pointer  ${
                   i === 4 && "ml-32"
                 }`}
               >
